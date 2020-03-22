@@ -35,3 +35,12 @@ C:\Users\Nan\Desktop\MathCalculatio\MathCalculatio\obj\Debug\MathCalculatio.cspr
 C:\Users\Nan\Desktop\MathCalculatio\MathCalculatio\obj\Debug\MathCalculatio.Form1.resources
 C:\Users\Nan\Desktop\MathCalculatio\MathCalculatio\obj\Debug\MathCalculatio.Properties.Resources.resources
 C:\Users\Nan\Desktop\MathCalculatio\MathCalculatio\obj\Debug\MathCalculatio.csproj.GenerateResource.Cache
+C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\bin\Debug\MathCalculatio.exe.config
+C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.exe
+C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.pdb
+C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\bin\Debug\MathCalculatio.exe
+C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\bin\Debug\MathCalculatio.pdb
+C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.csprojResolveAssemblyReference.cache
+C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.Form1.resources
+C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.Properties.Resources.resources
+C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.csproj.GenerateResource.Cache

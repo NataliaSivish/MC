@@ -13,6 +13,7 @@ namespace MathCalculatio
 {
     public partial class Form1 : Form
     {
+        Boolean isInputM = false;
         String mesResult;
         public Form1()
         {
@@ -31,7 +32,9 @@ namespace MathCalculatio
 
         private void buttonInputKeyBoard_Click(object sender, EventArgs e)
         {
+            picturePoint.Visible = false;
             buttonSaveRes.Enabled = false;
+            isInputM = false;
             if (textBoxForX.Text != "" || textBoxForY.Text != "")
             {
                 textBoxForX.Text = "";
@@ -51,6 +54,8 @@ namespace MathCalculatio
 
         private void buttonInputRand_Click(object sender, EventArgs e)
         {
+            picturePoint.Visible = false;
+            isInputM = false;
             buttonSaveRes.Enabled = false;
             Double x = 1.0;
             Double y = 1.0;
@@ -94,6 +99,8 @@ namespace MathCalculatio
 
         private void buttonInputFile_Click(object sender, EventArgs e)
         {
+            picturePoint.Visible = false;
+            isInputM = false;
             buttonSaveRes.Enabled = false;
             bool isFilledX = false;
             bool isFilledY = false;
@@ -149,6 +156,15 @@ namespace MathCalculatio
                     MessageBox.Show("Данные в файле некорректны. \nПроверьте данные в файле исходника, они должны соответствовать форме 'x*****y*****'.");
                     return;
                 }
+                try
+                {
+                    double xx = Convert.ToDouble(x);
+                    double yy = Convert.ToDouble(y);
+                }
+                catch (Exception r) {
+                    MessageBox.Show("Данные в файле некорректны. \nПроверьте данные в файле исходника, они должны соответствовать форме 'x*****y*****'.\n На месте звездочек должны быть числа");
+                    return;
+                }
                 textBoxForX.Text = x;
                 textBoxForY.Text = y;
             }
@@ -156,9 +172,7 @@ namespace MathCalculatio
             {
                 MessageBox.Show("Не удается найти и открыть файл содержащий координаты точки");
             }
-        }
-
-        
+        }    
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
@@ -202,7 +216,7 @@ namespace MathCalculatio
                 mesResult = "Точка находится внутри заштрихованной области";
                 MessageBox.Show(mesResult);
             }
-            else if (((x * x + y * y == 1.0) && ((x > 0.0 && y >= -0.6) || (x < 0.0 && y <= -0.6))) || (y == -0.6 && (x <= Math.Sqrt(1 - y * y) && x >= Math.Sqrt(1 - y * y) * (-1.0))))
+            else if (((x * x + y * y == 1.0) && ((x > 0.0 && y >= -0.6) || (x < 0.0 && y <= -0.6))) || (y == -0.6 && (x <= Math.Sqrt(1 - y * y) && x >= Math.Sqrt(1 - y * y) * (-1.0))) || (x==0 && (y>=-1 || y<=1 )))
             {
                 mesResult = "Точка находится на границе заштрихованной области";
                 MessageBox.Show(mesResult);
@@ -238,17 +252,58 @@ namespace MathCalculatio
                 sw.WriteLine(res);
                 sw.Close();
                 buttonSaveRes.Enabled = false;
+                picturePoint.Visible = false;
             }
             catch (Exception p) {
                 MessageBox.Show("Не удается найти и открыть файл с результатами");
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonInputOnGraph_Click(object sender, EventArgs e)
         {
+            picturePoint.Visible = false;
+            buttonSaveRes.Enabled = false;
+            string x = "";
+            string y = "";
+            if (textBoxForX.Text != "" || textBoxForY.Text != "")
+            {
+                textBoxForX.Text = "";
+                textBoxForY.Text = "";
+            }
+            isInputM = true;
 
         }
 
+        private void pictureGraphic_Click(object sender, EventArgs e)
+        {
+            if (isInputM)
+            {
+                Point coordMouse = Form1.ActiveForm.PointToClient(Cursor.Position);
+                int x = coordMouse.X;
+                int y = coordMouse.Y;
+                int x0 = pictureGraphic.Location.X + pictureGraphic.Size.Width / 2;
+                int y0 = pictureGraphic.Location.Y + pictureGraphic.Size.Height / 2;
+                picturePoint.Location = new Point(Convert.ToInt16(x), Convert.ToInt16(y));
+
+                x = x - x0;
+                y = y - y0;
+                if (x > y0)
+                {
+                    x = x * (-1);
+                }
+                if (y < x0)
+                {
+                    y = y * (-1);
+                }
+                textBoxForX.Text = (Convert.ToDouble(x) / 100.0).ToString();
+                textBoxForY.Text = (Convert.ToDouble(y) / 100.0).ToString();
+                picturePoint.Visible = true;
+            }
+            else {
+                MessageBox.Show("Чтобы выбирать точки на графике с помощью мыши, выберети 'ввод с помощью мыши'.");
+            }
+            
+        }
 
 
 

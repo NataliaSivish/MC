@@ -42,7 +42,7 @@
             this.picturePoint = new System.Windows.Forms.PictureBox();
             this.buttonResult = new System.Windows.Forms.Button();
             this.buttonSaveRes = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonInputOnGraph = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureGraphic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturePoint)).BeginInit();
             this.SuspendLayout();
@@ -138,13 +138,14 @@
             this.pictureGraphic.Size = new System.Drawing.Size(600, 600);
             this.pictureGraphic.TabIndex = 13;
             this.pictureGraphic.TabStop = false;
+            this.pictureGraphic.Click += new System.EventHandler(this.pictureGraphic_Click);
             // 
             // picturePoint
             // 
             this.picturePoint.Image = ((System.Drawing.Image)(resources.GetObject("picturePoint.Image")));
             this.picturePoint.Location = new System.Drawing.Point(460, 143);
             this.picturePoint.Name = "picturePoint";
-            this.picturePoint.Size = new System.Drawing.Size(7, 7);
+            this.picturePoint.Size = new System.Drawing.Size(8, 8);
             this.picturePoint.TabIndex = 14;
             this.picturePoint.TabStop = false;
             this.picturePoint.Visible = false;
@@ -170,22 +171,23 @@
             this.buttonSaveRes.UseVisualStyleBackColor = true;
             this.buttonSaveRes.Click += new System.EventHandler(this.buttonSaveRes_Click);
             // 
-            // button1
+            // buttonInputOnGraph
             // 
-            this.button1.Location = new System.Drawing.Point(571, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Ввод из файла";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonInputOnGraph.Location = new System.Drawing.Point(552, 80);
+            this.buttonInputOnGraph.Name = "buttonInputOnGraph";
+            this.buttonInputOnGraph.Size = new System.Drawing.Size(150, 23);
+            this.buttonInputOnGraph.TabIndex = 17;
+            this.buttonInputOnGraph.Text = "Ввод с помощью мыши";
+            this.buttonInputOnGraph.UseMnemonic = false;
+            this.buttonInputOnGraph.UseVisualStyleBackColor = true;
+            this.buttonInputOnGraph.Click += new System.EventHandler(this.buttonInputOnGraph_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1343, 642);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonInputOnGraph);
             this.Controls.Add(this.buttonSaveRes);
             this.Controls.Add(this.buttonResult);
             this.Controls.Add(this.picturePoint);
@@ -224,7 +226,7 @@
         private System.Windows.Forms.PictureBox picturePoint;
         private System.Windows.Forms.Button buttonResult;
         private System.Windows.Forms.Button buttonSaveRes;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonInputOnGraph;
     }
 }
 

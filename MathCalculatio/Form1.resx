@@ -121,7 +121,7 @@
   <data name="pictureGraphic.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlYAAAJZCAYAAABr83vKAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAqkJJREFUeF7tvQe4dEWVtk0GyTnnnHPOSXLOYURAMDAq6iAySMZBQImKZEWSKAiS
+        vwAADr8BOAVTJAAAqkJJREFUeF7tvQe4dEWVtk0GyTnnnHPOSXLOYURAMDAq6iAySMZBQImKZEWSKAiS
         swQJAiJIkqDINwL+IgwqAzqOzv6/u8Z6v6bdtbvPeTvsXX3v6zrXC+fsrvCs6t53r7Vq1SSFlwqogAqo
         gAqogAqoQE8UmKQnrdiICqiACqiACqiACqhAIVi5CFRABVRABVRABVSgRwoIVj0S0mZUQAVUQAVUQAVU
         QLByDaiACqiACqiACqhAjxQQrHokpM2ogAqogAqogAqogGDlGlABFVABFVABFVCBHikgWPVISJtRARVQ
@@ -853,7 +853,7 @@
   <data name="picturePoint.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAIAAAAmzuBxAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABZJREFUKFNjeCujgh8xjKpACSFqhAcAUvaORnmDrQIAAAAASUVORK5CYII=
+        vQAADr0BR/uQrQAAABZJREFUKFNjeCujgh8xjKpACSFqhAcAUvaORnmDrQIAAAAASUVORK5CYII=
 </value>
   </data>
 </root>
