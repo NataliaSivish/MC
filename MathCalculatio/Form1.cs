@@ -305,7 +305,14 @@ namespace MathCalculatio
             
         }
 
+        private void textBoxForX_TextChanged(object sender, EventArgs e)
+        {
+            buttonSaveRes.Enabled = false;
+        }
 
-
+        private void textBoxForY_TextChanged(object sender, EventArgs e)
+        {
+            buttonSaveRes.Enabled = false;
+        }
     }
 }

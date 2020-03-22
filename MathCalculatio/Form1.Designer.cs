@@ -82,6 +82,7 @@
             this.textBoxForX.Name = "textBoxForX";
             this.textBoxForX.Size = new System.Drawing.Size(100, 20);
             this.textBoxForX.TabIndex = 6;
+            this.textBoxForX.TextChanged += new System.EventHandler(this.textBoxForX_TextChanged);
             // 
             // textBoxForY
             // 
@@ -90,6 +91,7 @@
             this.textBoxForY.Name = "textBoxForY";
             this.textBoxForY.Size = new System.Drawing.Size(100, 20);
             this.textBoxForY.TabIndex = 8;
+            this.textBoxForY.TextChanged += new System.EventHandler(this.textBoxForY_TextChanged);
             // 
             // label4
             // 
