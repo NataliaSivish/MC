@@ -44,3 +44,12 @@ C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.c
 C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.Form1.resources
 C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.Properties.Resources.resources
 C:\Users\Nan\Desktop\MathCalculatio\MC\MathCalculatio\obj\Debug\MathCalculatio.csproj.GenerateResource.Cache
+D:\Универ(2)\тр по\MC\MathCalculatio\bin\Debug\MathCalculatio.exe.config
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculatio.exe
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculatio.pdb
+D:\Универ(2)\тр по\MC\MathCalculatio\bin\Debug\MathCalculatio.exe
+D:\Универ(2)\тр по\MC\MathCalculatio\bin\Debug\MathCalculatio.pdb
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculatio.csprojResolveAssemblyReference.cache
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculatio.Form1.resources
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculatio.Properties.Resources.resources
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculatio.csproj.GenerateResource.Cache

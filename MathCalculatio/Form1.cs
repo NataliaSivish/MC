@@ -35,6 +35,12 @@ namespace MathCalculatio
             picturePoint.Visible = false;
             buttonSaveRes.Enabled = false;
             isInputM = false;
+
+            buttonInputKeyBoard.Enabled = false;
+            buttonInputFile.Enabled = true;
+            buttonInputOnGraph.Enabled = true;
+            buttonInputRand.Enabled = true;
+
             if (textBoxForX.Text != "" || textBoxForY.Text != "")
             {
                 textBoxForX.Text = "";
@@ -57,6 +63,12 @@ namespace MathCalculatio
             picturePoint.Visible = false;
             isInputM = false;
             buttonSaveRes.Enabled = false;
+
+            buttonInputKeyBoard.Enabled = true;
+            buttonInputFile.Enabled = true;
+            buttonInputOnGraph.Enabled = true;
+            buttonInputRand.Enabled = false;
+
             Double x = 1.0;
             Double y = 1.0;
             if (textBoxForX.Text != "" || textBoxForY.Text != "")
@@ -99,6 +111,12 @@ namespace MathCalculatio
 
         private void buttonInputFile_Click(object sender, EventArgs e)
         {
+            buttonInputKeyBoard.Enabled = true;
+            buttonInputFile.Enabled = false;
+            buttonInputOnGraph.Enabled = true;
+            buttonInputRand.Enabled = true;
+            textBoxForX.Enabled = false;
+            textBoxForY.Enabled = false;
             picturePoint.Visible = false;
             isInputM = false;
             buttonSaveRes.Enabled = false;
@@ -201,11 +219,11 @@ namespace MathCalculatio
                 MessageBox.Show("Проверьте правильность вводимых данных");
                 return;
             }
-           if (x >= 3.0 && x <= -3.0) {
-                MessageBox.Show("Введеyное значение х не соответствует условиям  -3 <= x <= 3 ");
+           if (x >= 3.0 || x <= -3.0) {
+                MessageBox.Show("Введенное значение х не соответствует условиям  -3 <= x <= 3 ");
                 return;
             }
-            if (y >= 3.0 && y <= -3.0)
+            if (y >= 3.0 || y <= -3.0)
             {
                 MessageBox.Show("Введеное значение y не соответствует  -3 <= y <= 3 ");
                 return;
@@ -261,6 +279,12 @@ namespace MathCalculatio
 
         private void buttonInputOnGraph_Click(object sender, EventArgs e)
         {
+            buttonInputKeyBoard.Enabled = true;
+            buttonInputFile.Enabled = true;
+            buttonInputOnGraph.Enabled = false;
+            buttonInputRand.Enabled = true;
+            textBoxForX.Enabled = false;
+            textBoxForY.Enabled = false;
             picturePoint.Visible = false;
             buttonSaveRes.Enabled = false;
             string x = "";

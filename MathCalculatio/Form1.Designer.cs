@@ -62,9 +62,10 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(27, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 13);
+            this.label2.Size = new System.Drawing.Size(538, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Выберете способ ввода координат";
+            this.label2.Text = "Выберете способ ввода координат (по умолчанию в начале активен способ ввода - \'Вв" +
+    "од с клавиатуры\')";
             // 
             // label3
             // 
@@ -77,7 +78,6 @@
             // 
             // textBoxForX
             // 
-            this.textBoxForX.Enabled = false;
             this.textBoxForX.Location = new System.Drawing.Point(61, 135);
             this.textBoxForX.Name = "textBoxForX";
             this.textBoxForX.Size = new System.Drawing.Size(100, 20);
@@ -86,7 +86,6 @@
             // 
             // textBoxForY
             // 
-            this.textBoxForY.Enabled = false;
             this.textBoxForY.Location = new System.Drawing.Point(208, 135);
             this.textBoxForY.Name = "textBoxForY";
             this.textBoxForY.Size = new System.Drawing.Size(100, 20);
@@ -104,6 +103,7 @@
             // 
             // buttonInputKeyBoard
             // 
+            this.buttonInputKeyBoard.Enabled = false;
             this.buttonInputKeyBoard.Location = new System.Drawing.Point(33, 80);
             this.buttonInputKeyBoard.Name = "buttonInputKeyBoard";
             this.buttonInputKeyBoard.Size = new System.Drawing.Size(130, 23);
@@ -147,7 +147,7 @@
             this.picturePoint.Image = ((System.Drawing.Image)(resources.GetObject("picturePoint.Image")));
             this.picturePoint.Location = new System.Drawing.Point(460, 143);
             this.picturePoint.Name = "picturePoint";
-            this.picturePoint.Size = new System.Drawing.Size(8, 8);
+            this.picturePoint.Size = new System.Drawing.Size(10, 10);
             this.picturePoint.TabIndex = 14;
             this.picturePoint.TabStop = false;
             this.picturePoint.Visible = false;
@@ -204,7 +204,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "MathCalculatio";
+            this.Text = "MathCalculation";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureGraphic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturePoint)).EndInit();
