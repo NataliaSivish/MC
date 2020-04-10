@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MathCalculatio
+namespace MathCalculation
 {
     public partial class Form1 : Form
     {
@@ -188,7 +188,7 @@ namespace MathCalculatio
             }
             catch (Exception t)
             {
-                MessageBox.Show("Не удается найти и открыть файл содержащий координаты точки");
+                MessageBox.Show("Не удается найти и открыть файл, содержащий координаты точки");
             }
         }    
 
@@ -219,11 +219,11 @@ namespace MathCalculatio
                 MessageBox.Show("Проверьте правильность вводимых данных");
                 return;
             }
-           if (x >= 3.0 || x <= -3.0) {
+           if (x > 3.0 || x < -3.0) {
                 MessageBox.Show("Введенное значение х не соответствует условиям  -3 <= x <= 3 ");
                 return;
             }
-            if (y >= 3.0 || y <= -3.0)
+            if (y > 3.0 || y < -3.0)
             {
                 MessageBox.Show("Введеное значение y не соответствует  -3 <= y <= 3 ");
                 return;
@@ -324,7 +324,7 @@ namespace MathCalculatio
                 picturePoint.Visible = true;
             }
             else {
-                MessageBox.Show("Чтобы выбирать точки на графике с помощью мыши, выберети 'ввод с помощью мыши'.");
+                MessageBox.Show("Чтобы выбирать точки на графике с помощью мыши, выберете 'ввод с помощью мыши'.");
             }
             
         }

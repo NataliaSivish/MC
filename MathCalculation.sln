@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCalculatio", "MathCalculatio\MathCalculatio.csproj", "{0BC8AC6D-7C88-4EFC-A84E-A84F2612A835}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathCalculation", "MathCalculatio\MathCalculation.csproj", "{0BC8AC6D-7C88-4EFC-A84E-A84F2612A835}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

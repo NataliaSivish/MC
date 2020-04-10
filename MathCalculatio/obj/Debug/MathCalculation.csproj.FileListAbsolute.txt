@@ -1,0 +1,8 @@
+D:\Универ(2)\тр по\MC\MathCalculatio\bin\Debug\MathCalculatio.exe.config
+D:\Универ(2)\тр по\MC\MathCalculatio\bin\Debug\MathCalculatio.exe
+D:\Универ(2)\тр по\MC\MathCalculatio\bin\Debug\MathCalculatio.pdb
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculation.Form1.resources
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculation.Properties.Resources.resources
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculation.csproj.GenerateResource.Cache
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculatio.exe
+D:\Универ(2)\тр по\MC\MathCalculatio\obj\Debug\MathCalculatio.pdb

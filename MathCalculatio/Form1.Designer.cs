@@ -1,4 +1,4 @@
-﻿namespace MathCalculatio
+﻿namespace MathCalculation
 {
     partial class Form1
     {
