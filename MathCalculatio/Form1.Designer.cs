@@ -147,7 +147,7 @@
             this.picturePoint.Image = ((System.Drawing.Image)(resources.GetObject("picturePoint.Image")));
             this.picturePoint.Location = new System.Drawing.Point(460, 143);
             this.picturePoint.Name = "picturePoint";
-            this.picturePoint.Size = new System.Drawing.Size(10, 10);
+            this.picturePoint.Size = new System.Drawing.Size(5, 5);
             this.picturePoint.TabIndex = 14;
             this.picturePoint.TabStop = false;
             this.picturePoint.Visible = false;
