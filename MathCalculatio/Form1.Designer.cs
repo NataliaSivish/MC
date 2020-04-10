@@ -43,6 +43,7 @@
             this.buttonResult = new System.Windows.Forms.Button();
             this.buttonSaveRes = new System.Windows.Forms.Button();
             this.buttonInputOnGraph = new System.Windows.Forms.Button();
+            this.setCoordinatesRand = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureGraphic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturePoint)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +71,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 138);
+            this.label3.Location = new System.Drawing.Point(33, 167);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(15, 13);
             this.label3.TabIndex = 5;
@@ -78,7 +79,7 @@
             // 
             // textBoxForX
             // 
-            this.textBoxForX.Location = new System.Drawing.Point(61, 135);
+            this.textBoxForX.Location = new System.Drawing.Point(54, 164);
             this.textBoxForX.Name = "textBoxForX";
             this.textBoxForX.Size = new System.Drawing.Size(100, 20);
             this.textBoxForX.TabIndex = 6;
@@ -86,7 +87,7 @@
             // 
             // textBoxForY
             // 
-            this.textBoxForY.Location = new System.Drawing.Point(208, 135);
+            this.textBoxForY.Location = new System.Drawing.Point(201, 164);
             this.textBoxForY.Name = "textBoxForY";
             this.textBoxForY.Size = new System.Drawing.Size(100, 20);
             this.textBoxForY.TabIndex = 8;
@@ -95,7 +96,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(187, 138);
+            this.label4.Location = new System.Drawing.Point(180, 167);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(15, 13);
             this.label4.TabIndex = 7;
@@ -184,11 +185,23 @@
             this.buttonInputOnGraph.UseVisualStyleBackColor = true;
             this.buttonInputOnGraph.Click += new System.EventHandler(this.buttonInputOnGraph_Click);
             // 
+            // setCoordinatesRand
+            // 
+            this.setCoordinatesRand.Location = new System.Drawing.Point(33, 125);
+            this.setCoordinatesRand.Name = "setCoordinatesRand";
+            this.setCoordinatesRand.Size = new System.Drawing.Size(130, 23);
+            this.setCoordinatesRand.TabIndex = 18;
+            this.setCoordinatesRand.Text = "Сгенерировать число";
+            this.setCoordinatesRand.UseVisualStyleBackColor = true;
+            this.setCoordinatesRand.Visible = false;
+            this.setCoordinatesRand.Click += new System.EventHandler(this.setCoordinatesRand_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1343, 642);
+            this.Controls.Add(this.setCoordinatesRand);
             this.Controls.Add(this.buttonInputOnGraph);
             this.Controls.Add(this.buttonSaveRes);
             this.Controls.Add(this.buttonResult);
@@ -229,6 +242,7 @@
         private System.Windows.Forms.Button buttonResult;
         private System.Windows.Forms.Button buttonSaveRes;
         private System.Windows.Forms.Button buttonInputOnGraph;
+        private System.Windows.Forms.Button setCoordinatesRand;
     }
 }
 

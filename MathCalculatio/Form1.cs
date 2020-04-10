@@ -32,30 +32,7 @@ namespace MathCalculation
 
         private void buttonInputKeyBoard_Click(object sender, EventArgs e)
         {
-            picturePoint.Visible = false;
-            buttonSaveRes.Enabled = false;
-            isInputM = false;
-
-            buttonInputKeyBoard.Enabled = false;
-            buttonInputFile.Enabled = true;
-            buttonInputOnGraph.Enabled = true;
-            buttonInputRand.Enabled = true;
-
-            if (textBoxForX.Text != "" || textBoxForY.Text != "")
-            {
-                textBoxForX.Text = "";
-                textBoxForY.Text = "";
-            }
-            if (textBoxForX.Enabled) 
-            {
-                textBoxForX.Enabled = false;
-                textBoxForY.Enabled = false;
-            }
-            else
-            {
-                textBoxForX.Enabled = true;
-                textBoxForY.Enabled = true;
-            }
+            startState();   
         }
 
         private void buttonInputRand_Click(object sender, EventArgs e)
@@ -69,8 +46,7 @@ namespace MathCalculation
             buttonInputOnGraph.Enabled = true;
             buttonInputRand.Enabled = false;
 
-            Double x = 1.0;
-            Double y = 1.0;
+            setCoordinatesRand.Visible = true;
             if (textBoxForX.Text != "" || textBoxForY.Text != "")
             {
                 textBoxForX.Text = "";
@@ -78,39 +54,12 @@ namespace MathCalculation
             }
             textBoxForX.Enabled = false;
             textBoxForY.Enabled = false;
-            var rand = new Random();
-            if (rand.Next(100) % 2 == 0)
-            {
-                x = -1.0;
-            }
-            if (rand.Next(200) % 2 == 0)
-            {
-                y = -1.0;
-            }
-
-            y = y * rand.NextDouble();
-            x = x * rand.NextDouble();
-
-            if (rand.Next(100) % 2 == 0)
-            {
-                if (x < 0.0)
-                    x = x - rand.Next(3);
-                else
-                    x = x + rand.Next(3);
-            }
-            if (rand.Next(200) % 2 == 0)
-            {
-                if (y < 0.0)
-                    y = y - rand.Next(3);
-                else
-                    y = y + rand.Next(3);
-            }
-            textBoxForX.Text = x.ToString().Substring(0, 6);
-            textBoxForY.Text = y.ToString().Substring(0, 6);
+           
         }
 
         private void buttonInputFile_Click(object sender, EventArgs e)
         {
+            setCoordinatesRand.Visible = false;
             buttonInputKeyBoard.Enabled = true;
             buttonInputFile.Enabled = false;
             buttonInputOnGraph.Enabled = true;
@@ -171,6 +120,7 @@ namespace MathCalculation
                     }
                 }
                 if (x == "" || x == "") {
+                    startState();
                     MessageBox.Show("Данные в файле некорректны. \nПроверьте данные в файле исходника, они должны соответствовать форме 'x*****y*****'.");
                     return;
                 }
@@ -180,6 +130,7 @@ namespace MathCalculation
                     double yy = Convert.ToDouble(y);
                 }
                 catch (Exception r) {
+                    startState();
                     MessageBox.Show("Данные в файле некорректны. \nПроверьте данные в файле исходника, они должны соответствовать форме 'x*****y*****'.\n На месте звездочек должны быть числа");
                     return;
                 }
@@ -188,6 +139,7 @@ namespace MathCalculation
             }
             catch (Exception t)
             {
+                startState();
                 MessageBox.Show("Не удается найти и открыть файл, содержащий координаты точки");
             }
         }    
@@ -287,6 +239,7 @@ namespace MathCalculation
             textBoxForY.Enabled = false;
             picturePoint.Visible = false;
             buttonSaveRes.Enabled = false;
+            setCoordinatesRand.Visible = false;
             string x = "";
             string y = "";
             if (textBoxForX.Text != "" || textBoxForY.Text != "")
@@ -337,6 +290,60 @@ namespace MathCalculation
         private void textBoxForY_TextChanged(object sender, EventArgs e)
         {
             buttonSaveRes.Enabled = false;
+        }
+
+        private void setCoordinatesRand_Click(object sender, EventArgs e)
+        {
+            Double x = 1.0;
+            Double y = 1.0;
+            
+            var rand = new Random();
+            if (rand.Next(100) % 2 == 0)
+            {
+                x = -1.0;
+            }
+            if (rand.Next(200) % 2 == 0)
+            {
+                y = -1.0;
+            }
+
+            y = y * rand.NextDouble();
+            x = x * rand.NextDouble();
+
+            if (rand.Next(100) % 2 == 0)
+            {
+                if (x < 0.0)
+                    x = x - rand.Next(3);
+                else
+                    x = x + rand.Next(3);
+            }
+            if (rand.Next(200) % 2 == 0)
+            {
+                if (y < 0.0)
+                    y = y - rand.Next(3);
+                else
+                    y = y + rand.Next(3);
+            }
+            textBoxForX.Text = x.ToString().Substring(0, 6);
+            textBoxForY.Text = y.ToString().Substring(0, 6);
+        }
+
+        private void startState() {
+            picturePoint.Visible = false;
+            buttonSaveRes.Enabled = false;
+            isInputM = false;
+            setCoordinatesRand.Visible = false;
+            buttonInputKeyBoard.Enabled = false;
+            buttonInputFile.Enabled = true;
+            buttonInputOnGraph.Enabled = true;
+            buttonInputRand.Enabled = true;
+            if (textBoxForX.Text != "" || textBoxForY.Text != "")
+            {
+                textBoxForX.Text = "";
+                textBoxForY.Text = "";
+            }
+            textBoxForX.Enabled = true;
+            textBoxForY.Enabled = true;
         }
     }
 }
